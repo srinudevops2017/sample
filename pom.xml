@@ -7,7 +7,8 @@
   	<version>1.0-SNAPSHOT</version>
 <build>
     
-<dependency>
+<dependency org="org.apache.maven.plugins" name="maven-compiler-plugin" rev="3.8.1">
+  <artifact name="maven-compiler-plugin" type="maven-plugin" />
   <groupId>org.apache.maven.plugins</groupId>
   <artifactId>maven-compiler-plugin</artifactId>
   <version>3.8.1</version>
