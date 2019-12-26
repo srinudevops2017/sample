@@ -4,22 +4,16 @@
 	<groupId>com.sample.projects</groupId>
   	<artifactId>SampleProject</artifactId>
   	<packaging>war</packaging>
-  	<version>1.0-SNAPSHOT</version>
+  	<version>${Version}</version>
+<properties>
+    <Version>1.1-SNAPSHOT</Version>
+</properties>
 <build>
-    
-<dependency org="org.apache.maven.plugins" name="maven-compiler-plugin" rev="3.8.1">
-  <artifact name="maven-compiler-plugin" type="maven-plugin" />
-  <groupId>org.apache.maven.plugins</groupId>
-  <artifactId>maven-compiler-plugin</artifactId>
-  <version>3.8.1</version>
-  <type>maven-plugin</type>
-</dependency>
-	
 	<plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.2.3</version>
+        <version>3.8.1</version>
       </plugin>
 	  
 	  <plugin>
@@ -31,6 +25,11 @@
     </plugins>
   </build>	
 	
-	
-	
+<dependencies>	
+	<dependency>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-compiler-plugin</artifactId>
+		<version>3.8.1</version>
+	</dependency>
+</dependencies>	
 </project>
